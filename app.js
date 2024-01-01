@@ -9,7 +9,7 @@ const app = express();
 const port = 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://iamdeenes:MHN5aSep1bzvty0S@cluster0.iynhvh2.mongodb.net/node-mongo-auth', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodburl', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(session({
   secret: 'your_session_secret', // replace with a secure secret
